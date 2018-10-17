@@ -1,0 +1,108 @@
+doctype
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Contact Us
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css', integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		.container
+			.row
+				.col-md-6.m-auto
+					h1.mt-5 Contact Us Main
+					form.mt-5(webriq, data-form-id="5bc69a220279295b08398320")
+						.form-group.row
+							label.col-3.col-form-label(for='text') Full Name
+							.col-9
+								.input-group
+									.input-group-addon
+										i.fa.fa-address-card
+									input#text.form-control.here(name='text', type='text')
+						.form-group.row
+							label.col-3.col-form-label(for='text1') Subject
+							.col-9
+								input#text1.form-control.here(name='text1', type='text')
+						.form-group.row
+							label.col-3.col-form-label(for='select') Select
+							.col-9
+								select#select.custom-select(name='select')
+									option(value='rabbit') Rabbit
+									option(value='duck') Duck
+									option(value='fish') Fish
+						.form-group.row
+							label.col-3 Radio  Buttons
+							.col-9
+								label.custom-control.custom-radio
+									input.custom-control-input(name='radio', type='radio', value='rabbit')
+									span.custom-control-indicator
+									span.custom-control-description Rabbit
+								label.custom-control.custom-radio
+									input.custom-control-input(name='radio', type='radio', value='duck')
+									span.custom-control-indicator
+									span.custom-control-description Duck
+								label.custom-control.custom-radio
+									input.custom-control-input(name='radio', type='radio', value='fish')
+									span.custom-control-indicator
+									span.custom-control-description Fish
+						.form-group.row
+							label.col-3 Checkboxes
+							.col-9
+								label.custom-control.custom-checkbox
+									input.custom-control-input(name='checkbox', type='checkbox', checked='checked', value='rabbit')
+									span.custom-control-indicator
+									span.custom-control-description Rabbit
+								label.custom-control.custom-checkbox
+									input.custom-control-input(name='checkbox', type='checkbox', value='duck')
+									span.custom-control-indicator
+									span.custom-control-description Duck
+								label.custom-control.custom-checkbox
+									input.custom-control-input(name='checkbox', type='checkbox', value='fish')
+									span.custom-control-indicator
+									span.custom-control-description Fish
+						.form-group.row
+							label.col-3.col-form-label(for='file') File Upload
+							.col-9
+								input#file.form-control(type="file", name='attachment', cols='40', rows='5')
+						.form-group.row
+						.form-group.row
+							label.col-3.col-form-label(for='file') File Upload
+							.col-9
+								input#file.form-control(type="file", name='attachment2', cols='40', rows='5')
+						.form-group.row
+							label.col-3.col-form-label(for='textarea') Text Area
+							.col-9
+								textarea#textarea.form-control(name='textarea', cols='40', rows='5')
+						.form-group.row
+							div#webriq-recaptcha
+						.form-group.row
+							.offset-3.col-9
+								button.btn.btn-primary(name='submit', type='submit') Submit
+
+				.col-md-4.mt-5(style="background: #f6f6f6")
+					h2.pt-2 Secondary Form
+					form.mt-5(webriq, data-form-id="5bc69a220279295b08398320")
+						.form-group.row
+							label.col-3.col-form-label(for='text') Full Name
+							.col-9
+								.input-group
+									.input-group-addon
+										i.fa.fa-address-card
+									input#text.form-control.here(name='text', type='text')
+						.form-group.row
+							label.col-3.col-form-label(for='text1') Subject
+							.col-9
+								input#text1.form-control.here(name='text1', type='text')
+						.form-group.row
+							label.col-3.col-form-label(for='file') File Upload
+							.col-9
+								input#file.form-control(type="file", name='attachment', cols='40', rows='5')
+						.form-group.row
+							label.col-3.col-form-label(for='textarea') Text Area
+							.col-9
+								textarea#textarea.form-control(name='textarea', cols='40', rows='5')
+						.form-group.row
+							div#webriq-recaptcha
+						.form-group.row
+							.offset-3.col-9
+								button.btn.btn-primary(name='submit', type='submit') Submit
+		script(src='https://staging.forms.webriq.com/js/initForms')
